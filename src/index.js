@@ -1,12 +1,14 @@
 
-exports.min = array =>
-     !arguments.length?  0: Math.min(...array)
+exports.min = function(array) {
+   return arguments.length && array.length ? Math.min(...array) : 0
+}
 
-
-exports.max = array =>
-    !arguments.length?  0: Math.max(...array)
+exports.max = (...array) =>
+     array.length && array[0].length ?  Math.max(...array[0]): 0
 
 
 exports.avg = function avg (array) {
-  return 0;
+    return arguments.length && array.length? array.reduce((sum,val) => sum+val)/array.length : 0
+
 }
+
