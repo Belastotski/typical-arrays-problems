@@ -1,11 +1,11 @@
 
-exports.min = array => {
+exports.min = array =>
      !arguments.length?  0: Math.min(...array)
-}
 
-exports.max = function max (array) {
-  return 0;
-}
+
+exports.max = array =>
+    !arguments.length?  0: Math.max(...array)
+
 
 exports.avg = function avg (array) {
   return 0;
